@@ -7,18 +7,18 @@ public class ExercicioasequenciaImpressao {
             //Casse para ler o terminal
             Scanner leitor = new Scanner(System.in);
 
-            System.out.println("Digite um numero");
-            int numero = leitor.nextInt();
+            System.out.println("Digite o numero final da contagem");
+            int numeroFinal = leitor.nextInt();
             int maiorPar = 0;
             int maiorImpar = 0;
 
-            for (int cont = 1; cont <= numero; cont++) {
+            for (int cont = 1; cont <= numeroFinal; cont++) {
                 if (cont % 2 == 0 ) {
                     int dobro = cont * 2;
                     if(dobro > maiorPar){
                         maiorPar = dobro;
                     }
-                    System.out.print(dobro+" - ");
+                    System.out.print(dobro + " - ");
                 } else {
                     int triplo = cont * 3;
                     if(triplo > maiorImpar){
